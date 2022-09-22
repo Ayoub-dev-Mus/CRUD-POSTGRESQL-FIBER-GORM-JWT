@@ -23,7 +23,7 @@ func InitDatabase() {
 	}
 
 	DBConn = db
-	DBConn.AutoMigrate(&models.Category{}, &models.Gig{}, &models.Comment{}, &models.Tags{}, &models.User{})
+	DBConn.AutoMigrate(&models.Category{}, &models.Gig{}, &models.Comment{}, &models.Tags{}, &models.User{},&models.Order{})
 
 	fmt.Println("Connection Opened to Database")
 

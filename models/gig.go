@@ -5,4 +5,8 @@ type Gig struct {
 	Title       string `json:"title"`
 	Description string `json:"description"`
 	Image       string `json:"image"`
+	Order    []Order `gorm:"ForeignKey:GigId"`
+	Tag    []Tags `gorm:"ForeignKey:GigId"`
+
+
 }
