@@ -11,7 +11,8 @@ func main() {
 	database.InitDatabase()
 
 	app := fiber.New()
-	routes.SetupRoutes(app)
+	routes.SetupCategoryRoutes(app)
+	routes.SetupUserRoutes(app)
 	app.Listen(8800)
 
 }

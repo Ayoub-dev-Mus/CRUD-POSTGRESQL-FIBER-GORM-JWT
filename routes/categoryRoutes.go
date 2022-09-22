@@ -4,7 +4,7 @@ import(
 	"FIVERR/services"
 	"github.com/gofiber/fiber")
 
-func SetupRoutes(app *fiber.App) {
+func SetupCategoryRoutes(app *fiber.App) {
 	api := app.Group("/category_api")
 
 	api.Get("/AllCategory", services.GetCategorys)
